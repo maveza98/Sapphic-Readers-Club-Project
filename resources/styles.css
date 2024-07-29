@@ -1,0 +1,255 @@
+/* General Styles */
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat Alternates', 'Arial', sans-serif;
+  color: #fff;
+  background-color: #4b0082;
+  font-size: 16px;
+}
+
+h1, h2 {
+  text-align: center;
+}
+
+p {
+  margin: 20px;
+  color: #333;
+}
+
+/* Header */
+header {
+  background-color: #4b0082;
+  color: #fff;
+  padding: 10px 0;
+}
+
+.title1 {
+  background-image: url('https://www.cronista.com/files/image/443/443616/61f5f63a54672.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 250px;
+  text-align: center;
+  position: relative;
+  margin: 0;
+}
+
+.title1 h1 {
+  font-size: 6rem;
+  color: #fff;
+  position: absolute;
+  z-index: 2;
+  margin-left: 130px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.title1::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+nav {
+  text-align: center;
+  margin: 20px 0;
+}
+
+nav ul {
+  list-style: none;
+  padding-top: 20px;
+}
+
+nav ul li {
+  display: inline;
+  margin: 15px 15px;
+  font-size: 2rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav ul li a:hover {
+  color: #ff69b4;
+}
+
+/* Main */
+main {
+  padding: 20px 0;
+}
+
+section#about, section#gallery, section#location {
+  background-color: #fff;
+  width: 100%;
+  border-radius: 5px;
+}
+
+.titles {
+  background-image: url('https://www.cronista.com/files/image/443/443616/61f5f63a54672.jpg');
+  background-size: cover;
+  border-radius: 5px;
+  background-position: center;
+  padding: 40px 20px;
+  height: 250px;
+  margin: 0;
+  color: #fff;
+  position: relative;
+}
+
+.titles h2 {
+  font-size: 4rem;
+  margin: 0;
+  margin-top: 100px;
+  position: relative;
+  z-index: 2;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.titles::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.description, .our-location {
+  background-color: #fff;
+  color: #4b0082;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  margin: 20px 0;
+}
+
+
+/* Gallery */
+.images {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  
+}
+
+.images img {
+  width: 30%;
+  height: 240px;
+  margin: 10px;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Footer */
+footer {
+  background-color: #4b0082;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.footer-redes {
+  background-color: #4b0082;
+  display: flex;
+  justify-content: space-around; /* Esto centrará los enlaces de Instagram y GitHub en el espacio disponible. */
+  padding: 20px 0;
+}
+
+.footer-redes div {
+  display: flex;
+   
+}
+
+.footer-redes a {
+  color: #fff;
+  text-decoration: none;
+  margin: 25px; /* Esto dará un poco de espacio entre la imagen y el texto. */
+}
+
+.footer-redes img {
+  width: 40px;
+  height: 40px;
+}
+
+footer p {
+  margin: 10px;
+  font-size: 0.9em;
+}
+
+#copy {
+  color: #ff69b4;
+}
+
+
+
+/* Media queries para tablet */
+@media only screen and (max-width: 768px) {
+  body, html {
+    font-size: 14px;
+  }
+
+  .title1 h1 {
+    font-size: 4rem;
+    margin-left: 80px;
+  }
+
+  nav ul li {
+    font-size: 1.5rem;
+  }
+
+  .titles h2 {
+    font-size: 3rem;
+  }
+
+  .images {
+    flex-direction: column;
+    height: auto;
+    margin-left: 0;
+  }
+
+  .images img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+/* Media queries para móvil */
+@media only screen and (max-width: 480px) {
+  body, html {
+    font-size: 12px;
+  }
+
+  .title1 h1 {
+    font-size: 3rem;
+    margin-left: 50px;
+  }
+
+  nav ul li {
+    font-size: 1.2rem;
+  }
+
+  .titles h2 {
+    font-size: 2.5rem;
+  }
+
+  .images {
+    flex-direction: column;
+    height: auto;
+    margin-left: 0;
+  }
+
+  .images img {
+    width: 100%;
+    height: auto;
+  }
+}
